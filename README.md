@@ -42,7 +42,11 @@ You can run the command **npm run setup** or **node config.js** to initialize yo
  	"role_to_give": "887571247850999878", //The Discord RoleID to grant users when they redeem a completed order.
  	"nicknames": { //Product Nicknames for easier reference
  	 	"demoNickname": "60c54fa7bc1ff"
- 	}
+ 	},
+  "temporary_role_IDs": [
+    "12335236", "54676547"
+  ],
+  "time_period_in_seconds":  86400
 }
 ```
 
