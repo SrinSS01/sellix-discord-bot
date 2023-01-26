@@ -80,4 +80,12 @@ client.on('message', async message => {
 
 });
 
+client.on('guildMemberUpdate', (oldMember, newMember) => {
+	const addedRoles = newMember.roles.cache.subtract(oldMember.roles.cache);
+    if (addedRoles.has(config.role_to_give)) {
+        const roles = newMember.guild.roles.cache.filter(role => config.temporary_role_IDs.includes(`${role.id}`));
+        newMember.roles.add(roles).then(() => setTimeout(() => newMember.roles.remove(roles), config.time_period_in_seconds)).catch(console.error)
+    }
+});
+
 client.login(config.token);
