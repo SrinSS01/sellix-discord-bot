@@ -12,7 +12,7 @@ A Complete Sellix.io Discord Bot using my [API wrapper](https://github.com/fsali
 # Requirements
 * Sellix.io API Key
 * Discord Bot Token ([How To Make A Discord Bot](https://www.section.io/engineering-education/discord-bot-node/))
-* NodeJS v12.0.0^
+* NodeJS v18.0.0^
 
 
 # Installation/Quickstart
