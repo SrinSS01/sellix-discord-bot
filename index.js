@@ -4,7 +4,7 @@ const fs = require('fs');
 const Discord = require('discord.js');
 const config = require('./config.json');
 const webhook = require('./webhook/webhook');
-const client = new Discord.Client({ intents: ["GUILDS", "GUILD_MESSAGES"] })
+const client = new Discord.Client({ intents: [ "GuildMembers", "Guilds", "GuildMessages" ] })
 client.commands = new Discord.Collection();
 
 const db_create = require('./database/createDB');
