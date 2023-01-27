@@ -8,3 +8,4 @@ database/users.db
 feedback.json
 event.json
 order.json
+node_modules
